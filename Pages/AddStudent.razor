@@ -1,0 +1,41 @@
+@page "/add-student"
+@using Microsoft.AspNetCore.Components.Forms
+
+<h3>Add Student</h3>
+
+<EditForm Model="@newStudent" OnValidSubmit="@HandleAddStudent">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Student ID:</label>
+        <InputText @bind-Value="@newStudent.StudentId" />
+    </div>
+    <div>
+        <label>Full Name:</label>
+        <InputText @bind-Value="@newStudent.FullName" />
+    </div>
+    <div>
+        <label>Course:</label>
+        <InputText @bind-Value="@newStudent.Course" />
+    </div>
+    <div>
+        <label>Year Level:</label>
+        <InputText @bind-Value="@newStudent.YearLevel" />
+    </div>
+    <div>
+        <label>Email:</label>
+        <InputText @bind-Value="@newStudent.Email" />
+    </div>
+
+    <button type="submit">Add Student</button>
+</EditForm>
+
+@code {
+    private Student newStudent = new Student();
+
+    private void HandleAddStudent()
+    {
+        // Call the StudentService to add the new student
+    }
+}

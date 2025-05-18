@@ -1,0 +1,31 @@
+@page "/students"
+
+<h3>Student List</h3>
+
+@if (students != null && students.Count > 0)
+{
+    <ul>
+        @foreach (var student in students)
+        {
+            <li>@student.FullName - @student.Email</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No students found.</p>
+}
+
+@inject StudentService StudentService
+
+@code {
+    private List<Student> students = new List<Student>();
+
+    protected override void OnInitialized()
+    {
+        if (StudentService != null)
+        {
+            students = StudentService.GetStudents();
+        }
+    }
+}

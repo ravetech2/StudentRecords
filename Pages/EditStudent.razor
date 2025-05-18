@@ -1,0 +1,58 @@
+@page "/edit-student/{id}"
+
+<h3>Edit Student</h3>
+
+<EditForm Model="@student" OnValidSubmit="@HandleEditStudent">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Student ID:</label>
+        <InputText @bind-Value="@student.StudentId" disabled />
+    </div>
+    <div>
+        <label>Full Name:</label>
+        <InputText @bind-Value="@student.FullName" />
+    </div>
+    <div>
+        <label>Course:</label>
+        <InputText @bind-Value="@student.Course" />
+    </div>
+    <div>
+        <label>Year Level:</label>
+        <InputText @bind-Value="@student.YearLevel" />
+    </div>
+    <div>
+        <label>Email:</label>
+        <InputText @bind-Value="@student.Email" />
+    </div>
+
+    <button type="submit">Save Changes</button>
+</EditForm>
+
+@code {
+    [Inject]
+    public StudentService? StudentService { get; set; }
+
+    [Parameter]
+    public string? Id { get; set; }
+
+    private Student student = new Student();
+
+    protected override void OnInitialized()
+    {
+        if (StudentService != null && Id != null)
+        {
+            student = StudentService.GetStudentById(Id) ?? new Student();
+        }
+        else
+        {
+            student = new Student();
+        }
+    }
+
+    private void HandleEditStudent()
+    {
+        // Call the StudentService to update the student
+    }
+}

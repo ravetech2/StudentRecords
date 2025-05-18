@@ -1,0 +1,9 @@
+<Students>
+    <Student>
+        <StudentId>2025001</StudentId>
+        <FullName>Jane Doe</FullName>
+        <Course>BSIT</Course>
+        <YearLevel>3</YearLevel>
+        <Email>jane.doe@example.com</Email>
+    </Student>
+</Students>

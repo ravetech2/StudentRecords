@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "c:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "c:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\wwwroot\\students.xml",
+      "PackagePath": "staticwebassets\\students.xml"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StudentRecords.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StudentRecords.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.StudentRecords.props",
+      "PackagePath": "build\\StudentRecords.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.StudentRecords.props",
+      "PackagePath": "buildMultiTargeting\\StudentRecords.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.StudentRecords.props",
+      "PackagePath": "buildTransitive\\StudentRecords.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
