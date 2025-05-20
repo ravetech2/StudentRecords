@@ -13,45 +13,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = StudentRecords
 build_property.RootNamespace = StudentRecords
-build_property.ProjectDir = C:\Users\orpia\Downloads\Compressed\StudentRecords\
+build_property.ProjectDir = C:\Users\orpia\source\repos\StudentRecords\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\orpia\Downloads\Compressed\StudentRecords
+build_property.MSBuildProjectDirectory = C:\Users\orpia\source\repos\StudentRecords
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/App.razor]
+[C:/Users/orpia/source/repos/StudentRecords/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/Pages/AddStudent.razor]
+[C:/Users/orpia/source/repos/StudentRecords/Pages/AddStudent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3R1ZGVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/Pages/EditStudent.razor]
+[C:/Users/orpia/source/repos/StudentRecords/Pages/Component.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/orpia/source/repos/StudentRecords/Pages/EditStudent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFN0dWRlbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/Pages/Index.razor]
+[C:/Users/orpia/source/repos/StudentRecords/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/Pages/ViewStudents.razor]
+[C:/Users/orpia/source/repos/StudentRecords/Pages/ViewStudents.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1N0dWRlbnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/Shared/MainLayout.razor]
+[C:/Users/orpia/source/repos/StudentRecords/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/Shared/NavMenu.razor]
+[C:/Users/orpia/source/repos/StudentRecords/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/orpia/Downloads/Compressed/StudentRecords/_Imports.razor]
+[C:/Users/orpia/source/repos/StudentRecords/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

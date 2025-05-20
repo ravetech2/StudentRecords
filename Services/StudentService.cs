@@ -1,80 +1,61 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
+using System.Threading.Tasks;
 using StudentRecords.Models;
 
 namespace StudentRecords.Services
 {
     public class StudentService
     {
-        private readonly string _xmlPath = "students.xml";
+        // Using an in-memory list to store students. In production,
+        // consider thread-safety or using a database.
+        private readonly List<Student> students = new();
 
-        public List<Student> GetStudents()
+        // Add a new student
+        public Task AddStudentAsync(Student student)
         {
-            if (!File.Exists(_xmlPath)) return new List<Student>();
-
-            var doc = XDocument.Load(_xmlPath);
-            if (doc.Root == null)
-                return new List<Student>();
-
-            return doc.Root.Elements("Student")
-                .Select(x => new Student
-                {
-                    StudentId = (string?)x.Element("StudentId") ?? string.Empty,
-                    FullName = (string?)x.Element("FullName") ?? string.Empty,
-                    Course = (string?)x.Element("Course") ?? string.Empty,
-                    YearLevel = (string?)x.Element("YearLevel") ?? string.Empty,
-                    Email = (string?)x.Element("Email") ?? string.Empty
-                }).ToList();
+            students.Add(student);
+            return Task.CompletedTask;
         }
 
-        public void AddStudent(Student student)
+        // Retrieve all students
+        public Task<List<Student>> GetStudentsAsync()
         {
-            XDocument doc;
-            if (File.Exists(_xmlPath))
+            return Task.FromResult(students);
+        }
+
+        // Retrieve a student by their ID
+        public Task<Student?> GetStudentByIdAsync(string id)
+        {
+            var student = students.FirstOrDefault(s => s.StudentId == id);
+            return Task.FromResult(student);
+        }
+
+        // Update an existing student by matching the StudentId.
+        // This method assumes that 'updatedStudent' contains the latest information.
+        public Task UpdateStudentAsync(Student updatedStudent)
+        {
+            var student = students.FirstOrDefault(s => s.StudentId == updatedStudent.StudentId);
+            if (student != null)
             {
-                doc = XDocument.Load(_xmlPath);
-                if (doc.Root == null)
-                {
-                    doc.Add(new XElement("Students"));
-                }
+                // Update the properties. You could add additional logic if needed.
+                student.FullName = updatedStudent.FullName;
+                student.Course = updatedStudent.Course;
+                student.YearLevel = updatedStudent.YearLevel;
+                student.Email = updatedStudent.Email;
             }
-            else
-            {
-                doc = new XDocument(new XElement("Students"));
-            }
-
-            doc.Root!.Add(new XElement("Student",
-                new XElement("StudentId", student.StudentId ?? string.Empty),
-                new XElement("FullName", student.FullName ?? string.Empty),
-                new XElement("Course", student.Course ?? string.Empty),
-                new XElement("YearLevel", student.YearLevel ?? string.Empty),
-                new XElement("Email", student.Email ?? string.Empty)
-            ));
-
-            doc.Save(_xmlPath);
+            return Task.CompletedTask;
         }
 
-        public void DeleteStudent(string studentId)
+        // Delete a student by their ID
+        public Task DeleteStudentAsync(string id)
         {
-            if (!File.Exists(_xmlPath)) return;
-
-            var doc = XDocument.Load(_xmlPath);
-            if (doc.Root == null) return;
-
-            var studentElement = doc.Root.Elements("Student")
-                .FirstOrDefault(x => ((string?)x.Element("StudentId") ?? string.Empty) == (studentId ?? string.Empty));
-
-            if (studentElement != null)
+            var student = students.FirstOrDefault(s => s.StudentId == id);
+            if (student != null)
             {
-                studentElement.Remove();
-                doc.Save(_xmlPath);
+                students.Remove(student);
             }
-        }
-
-        public Student? GetStudentById(string id)
-        {
-            return GetStudents().FirstOrDefault(s => s.StudentId == id);
-        }
+            return Task.CompletedTask;
         }
     }
+}

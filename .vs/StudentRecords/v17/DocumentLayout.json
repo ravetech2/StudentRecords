@@ -1,18 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\",
+  "WorkspaceRootPath": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentRecords.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\pages\\viewstudents.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:pages\\viewstudents.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentRecords.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\pages\\addstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:pages\\addstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\pages\\editstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:pages\\editstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|c:\\users\\orpia\\source\\repos\\studentrecords\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7F198251-91F9-3C7F-EFAB-FD44990A9602}|StudentRecords.csproj|solutionrelative:_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +59,149 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentRecords.csproj.user",
-              "DocumentMoniker": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj.user",
-              "RelativeDocumentMoniker": "StudentRecords.csproj.user",
-              "ToolTip": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj.user",
-              "RelativeToolTip": "StudentRecords.csproj.user",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2025-05-20T11:45:34.775Z",
+              "Title": "ViewStudents.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\ViewStudents.razor",
+              "RelativeDocumentMoniker": "Pages\\ViewStudents.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\ViewStudents.razor",
+              "RelativeToolTip": "Pages\\ViewStudents.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:51:21.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StudentRecords.csproj",
-              "DocumentMoniker": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj",
-              "RelativeDocumentMoniker": "StudentRecords.csproj",
-              "ToolTip": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj",
-              "RelativeToolTip": "StudentRecords.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-20T11:40:32.331Z"
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\Index.razor",
+              "RelativeToolTip": "Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:49:21.988Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AddStudent.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\AddStudent.razor",
+              "RelativeDocumentMoniker": "Pages\\AddStudent.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\AddStudent.razor",
+              "RelativeToolTip": "Pages\\AddStudent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:43:56.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:38:05.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:36:06.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\Program.cs",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T11:25:45.877Z"
+              "WhenOpened": "2025-05-20T11:25:45.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-20T12:36:23.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Services\\StudentService.cs",
+              "RelativeToolTip": "Services\\StudentService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:43:42.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditStudent.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\EditStudent.razor",
+              "RelativeDocumentMoniker": "Pages\\EditStudent.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Pages\\EditStudent.razor",
+              "RelativeToolTip": "Pages\\EditStudent.razor",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:45:50.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:35:41.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\_Imports.razor",
+              "RelativeDocumentMoniker": "_Imports.razor",
+              "ToolTip": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\_Imports.razor",
+              "RelativeToolTip": "_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:35:18.946Z",
+              "EditorCaption": ""
             }
           ]
         }

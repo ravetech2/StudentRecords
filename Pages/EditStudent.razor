@@ -1,58 +1,90 @@
-@page "/edit-student/{id}"
+@page "/edit-student/{Id}"
+@using Microsoft.AspNetCore.Components.Forms
+@using StudentRecords.Models
+@inject StudentRecords.Services.StudentService StudentService
+@inject NavigationManager NavigationManager
 
 <h3>Edit Student</h3>
 
-<EditForm Model="@student" OnValidSubmit="@HandleEditStudent">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+@if (student == null)
+{
+    <p>Loading student details...</p>
+}
+else
+{
+    <EditForm Model="@student" OnValidSubmit="HandleEditStudent">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
 
-    <div>
-        <label>Student ID:</label>
-        <InputText @bind-Value="@student.StudentId" disabled />
-    </div>
-    <div>
-        <label>Full Name:</label>
-        <InputText @bind-Value="@student.FullName" />
-    </div>
-    <div>
-        <label>Course:</label>
-        <InputText @bind-Value="@student.Course" />
-    </div>
-    <div>
-        <label>Year Level:</label>
-        <InputText @bind-Value="@student.YearLevel" />
-    </div>
-    <div>
-        <label>Email:</label>
-        <InputText @bind-Value="@student.Email" />
-    </div>
+        <!-- Display ID as read-only for clarity -->
+        <div class="mb-3">
+            <label for="studentId">Student ID:</label>
+            <InputText id="studentId" class="form-control" @bind-Value="student.StudentId" readonly />
+        </div>
+        <div class="mb-3">
+            <label for="fullName">Full Name:</label>
+            <InputText id="fullName" class="form-control" @bind-Value="student.FullName" />
+        </div>
+        <div class="mb-3">
+            <label for="course">Course:</label>
+            <InputText id="course" class="form-control" @bind-Value="student.Course" />
+        </div>
+        <div class="mb-3">
+            <label for="yearLevel">Year Level:</label>
+            <InputText id="yearLevel" class="form-control" @bind-Value="student.YearLevel" />
+        </div>
+        <div class="mb-3">
+            <label for="email">Email:</label>
+            <InputText id="email" class="form-control" @bind-Value="student.Email" />
+        </div>
 
-    <button type="submit">Save Changes</button>
-</EditForm>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </EditForm>
+}
 
 @code {
-    [Inject]
-    public StudentService? StudentService { get; set; }
-
+    // Parameter to receive the student ID from the route
     [Parameter]
     public string? Id { get; set; }
 
-    private Student student = new Student();
+    // Holds the student being edited
+    private Student? student;
 
-    protected override void OnInitialized()
+    // Load the student details when the component initializes
+    protected override async Task OnInitializedAsync()
     {
-        if (StudentService != null && Id != null)
+        if (!string.IsNullOrWhiteSpace(Id))
         {
-            student = StudentService.GetStudentById(Id) ?? new Student();
+            // Fetch the existing student data
+            var students = await StudentService.GetStudentsAsync();
+            student = students.FirstOrDefault(s => s.StudentId == Id);
+            if (student == null)
+            {
+                // Redirect if student not found
+                NavigationManager.NavigateTo("/viewstudents");
+            }
         }
         else
         {
+            // If no ID is provided, initialize a new student (should not happen in edit)
             student = new Student();
         }
     }
 
-    private void HandleEditStudent()
+    // Handles the form submission to update the student
+    private async Task HandleEditStudent()
     {
-        // Call the StudentService to update the student
+        try
+        {
+            // Update the student using the service
+            await StudentService.UpdateStudentAsync(student!);
+            // Navigate back to the students list after successful update
+            NavigationManager.NavigateTo("/viewstudents");
+        }
+        catch (Exception ex)
+        {
+            // Log any errors that occur during update
+            Console.Error.WriteLine($"Error updating student: {ex.Message}");
+        }
     }
 }

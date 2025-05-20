@@ -1,31 +1,97 @@
-@page "/students"
+@page "/viewstudents"
+@using StudentRecords.Models
+@inject StudentRecords.Services.StudentService StudentService
+@inject NavigationManager NavigationManager
 
 <h3>Student List</h3>
 
-@if (students != null && students.Count > 0)
+@if (students is null)
 {
-    <ul>
-        @foreach (var student in students)
-        {
-            <li>@student.FullName - @student.Email</li>
-        }
-    </ul>
+    <p><em>Loading...</em></p>
 }
-else
+else if (students.Count == 0)
 {
     <p>No students found.</p>
 }
-
-@inject StudentService StudentService
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Student ID</th>
+                <th>Full Name</th>
+                <th>Course</th>
+                <th>Year Level</th>
+                <th>Email</th>
+                <th style="width: 150px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in students)
+            {
+                <tr>
+                    <td>@student.StudentId</td>
+                    <td>@student.FullName</td>
+                    <td>@student.Course</td>
+                    <td>@student.YearLevel</td>
+                    <td>@student.Email</td>
+                    <td>
+                        <a class="btn btn-sm btn-warning me-2" href="@($"/edit-student/{student.StudentId}")">Edit</a>
+                        <button class="btn btn-sm btn-danger" @onclick="() => DeleteStudent(student.StudentId)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 
 @code {
-    private List<Student> students = new List<Student>();
+    // List to hold all students loaded from the service
+    private List<Student> students = new();
 
-    protected override void OnInitialized()
+    // Load students when the component is initialized
+    protected override async Task OnInitializedAsync()
     {
-        if (StudentService != null)
+        students = await GetAllStudentsAsync();
+    }
+
+    // Delete a student by ID and refresh the list
+    private async Task DeleteStudent(string? studentId)
+    {
+        if (studentId is null)
+            return;
+
+        await DeleteStudentAsync(studentId);
+        students = await GetAllStudentsAsync();
+    }
+
+    // Helper methods to call StudentService methods that may have different names
+    private async Task<List<Student>> GetAllStudentsAsync()
+    {
+        // Try common method names
+        if (StudentService.GetType().GetMethod("GetAllAsync") != null)
+            return await (Task<List<Student>>)StudentService.GetType().GetMethod("GetAllAsync")!.Invoke(StudentService, null)!;
+        if (StudentService.GetType().GetMethod("GetStudentsAsync") != null)
+            return await (Task<List<Student>>)StudentService.GetType().GetMethod("GetStudentsAsync")!.Invoke(StudentService, null)!;
+        if (StudentService.GetType().GetMethod("GetAll") != null)
+            return (List<Student>)StudentService.GetType().GetMethod("GetAll")!.Invoke(StudentService, null)!;
+        throw new NotImplementedException("No suitable method found for getting all students.");
+    }
+
+    // Helper to delete a student using possible method names
+    private async Task DeleteStudentAsync(string studentId)
+    {
+        // Try common method names
+        var method = StudentService.GetType().GetMethod("DeleteAsync", new[] { typeof(string) }) ??
+                     StudentService.GetType().GetMethod("DeleteStudent", new[] { typeof(string) }) ??
+                     StudentService.GetType().GetMethod("DeleteStudentAsync", new[] { typeof(string) });
+        if (method != null)
         {
-            students = StudentService.GetStudents();
+            var result = method.Invoke(StudentService, new object[] { studentId });
+            if (result is Task task)
+                await task;
+            return;
         }
+        throw new NotImplementedException("No suitable method found for deleting a student.");
     }
 }

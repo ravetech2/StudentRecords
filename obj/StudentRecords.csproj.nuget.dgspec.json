@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj": {}
+    "C:\\Users\\orpia\\source\\repos\\StudentRecords\\StudentRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj": {
+    "C:\\Users\\orpia\\source\\repos\\StudentRecords\\StudentRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj",
+        "projectUniqueName": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\StudentRecords.csproj",
         "projectName": "StudentRecords",
-        "projectPath": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\StudentRecords.csproj",
+        "projectPath": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\StudentRecords.csproj",
         "packagesPath": "C:\\Users\\orpia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\orpia\\Downloads\\Compressed\\StudentRecords\\obj\\",
+        "outputPath": "C:\\Users\\orpia\\source\\repos\\StudentRecords\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.0, )"

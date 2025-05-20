@@ -1,41 +1,47 @@
 @page "/add-student"
 @using Microsoft.AspNetCore.Components.Forms
+@using StudentRecords.Models
+@inject NavigationManager NavigationManager
+@inject StudentRecords.Services.StudentService StudentService
 
 <h3>Add Student</h3>
 
+<!-- Student Add Form -->
 <EditForm Model="@newStudent" OnValidSubmit="@HandleAddStudent">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <div>
-        <label>Student ID:</label>
-        <InputText @bind-Value="@newStudent.StudentId" />
+    <div class="mb-3">
+        <label for="studentId">Student ID:</label>
+        <InputText id="studentId" class="form-control" @bind-Value="@newStudent.StudentId" />
     </div>
-    <div>
-        <label>Full Name:</label>
-        <InputText @bind-Value="@newStudent.FullName" />
+    <div class="mb-3">
+        <label for="fullName">Full Name:</label>
+        <InputText id="fullName" class="form-control" @bind-Value="@newStudent.FullName" />
     </div>
-    <div>
-        <label>Course:</label>
-        <InputText @bind-Value="@newStudent.Course" />
+    <div class="mb-3">
+        <label for="course">Course:</label>
+        <InputText id="course" class="form-control" @bind-Value="@newStudent.Course" />
     </div>
-    <div>
-        <label>Year Level:</label>
-        <InputText @bind-Value="@newStudent.YearLevel" />
+    <div class="mb-3">
+        <label for="yearLevel">Year Level:</label>
+        <InputText id="yearLevel" class="form-control" @bind-Value="@newStudent.YearLevel" />
     </div>
-    <div>
-        <label>Email:</label>
-        <InputText @bind-Value="@newStudent.Email" />
+    <div class="mb-3">
+        <label for="email">Email:</label>
+        <InputText id="email" class="form-control" @bind-Value="@newStudent.Email" />
     </div>
-
-    <button type="submit">Add Student</button>
+    <button type="submit" class="btn btn-primary">Add Student</button>
 </EditForm>
 
 @code {
-    private Student newStudent = new Student();
+    // Model for the new student
+    private Student newStudent = new();
 
-    private void HandleAddStudent()
+    // Handles form submission and adds the student
+    private async Task HandleAddStudent()
     {
-        // Call the StudentService to add the new student
+        await StudentService.AddStudentAsync(newStudent);
+        NavigationManager.NavigateTo("/viewstudents");
     }
 }
