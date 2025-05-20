@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "StudentRecords",
   "resources": {
-    "hash": "sha256-Vb1XbPUvV0M1XVf05Idtp/ATLCboJ/RP2kF2LquK5xw=",
+    "hash": "sha256-Vy2ek3DRhFkLEBrk2qdP2zIiiGYMa1HqVv4iky6oMk0=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-8L4O6tiH48gEZfzf0Y84J01S+3eEG59Bo5bfpH2H+9Y=",
       "netstandard.wasm": "sha256-sEvS/ZjfGhf1dLglmk72ysM50loOygjujJ/J5OhFLEw=",
       "System.Private.CoreLib.wasm": "sha256-BhHYDTpkph+YJOQuAlv6aSrvjTVX0WLTIDBXecinFXo=",
-      "StudentRecords.wasm": "sha256-dlCiUTJZhN+nU0d1ydTRxjq7EEepEx4k3xT2RPFG7l0="
+      "StudentRecords.wasm": "sha256-Pufqsl/actHXUvurf8k63uAarim5tK3i1XMtR/TZZdM="
     },
     "pdb": {
-      "StudentRecords.pdb": "sha256-eYI94VtyAA5WvdeyOLTW+v20gbxxGw71YzQ07uTYgSo="
+      "StudentRecords.pdb": "sha256-pYknw7LJK0gSvFf0t/17rvAHfiAYMUifQD3N1DL3JeI="
     }
   },
   "cacheBootResources": true,

@@ -623,6 +623,7 @@ C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecor
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecords.AssemblyInfo.cs
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecords.csproj.CoreCompileInputs.cache
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecords.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecords.sourcelink.json
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -1020,6 +1021,9 @@ C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\6
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\rr9xm5iqdj-tptq2av103.gz
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\h6kdjqd1ld-lfu7j35m59.gz
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\thdqpu9kk8-oyz0vx2fzb.gz
+C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\tvid24pkg5-2c960dd6p1.gz
+C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\tn52ciy0es-d2t2y2izfe.gz
+C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\h4ydttpl00-9nw1hahbt4.gz
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -1034,6 +1038,3 @@ C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecor
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\refint\StudentRecords.dll
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\StudentRecords.pdb
 C:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\ref\StudentRecords.dll
-c:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\tvid24pkg5-u34byd10hh.gz
-c:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\tn52ciy0es-h65ldai3tg.gz
-c:\Users\orpia\Downloads\Compressed\StudentRecords\obj\Debug\net8.0\compressed\h4ydttpl00-hufzqzym5b.gz
